@@ -17,12 +17,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cyberheaven.app"),
+
   title: {
     default: "Cyber Heaven",
     template: "%s | Cyber Heaven",
   },
+
   description:
     "Cyber Heaven builds focused software products for productivity, finance, business, and developers.",
+
+  applicationName: "Cyber Heaven",
+
+  creator: "Cyber Heaven LLC",
+  publisher: "Cyber Heaven LLC",
+
+  openGraph: {
+    type: "website",
+    siteName: "Cyber Heaven",
+    title: "Cyber Heaven",
+    description: "Focused software products built with purpose.",
+    url: "https://cyberheaven.app",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Cyber Heaven",
+    description: "Focused software products built with purpose.",
+  },
 };
 
 export default function RootLayout({
@@ -31,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="flex min-h-screen flex-col">
           <SiteHeader />

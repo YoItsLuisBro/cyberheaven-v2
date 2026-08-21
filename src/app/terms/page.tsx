@@ -7,7 +7,12 @@ import { LegalSection } from "@/components/legal/LegalSection";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
+
   description: "Terms governing use of the Cyber Heaven website.",
+
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsPage() {

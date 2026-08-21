@@ -8,8 +8,20 @@ import { CompanyPrinciples } from "@/components/company/CompanyPrinciples";
 
 export const metadata: Metadata = {
   title: "Company",
+
   description:
     "Learn more about Cyber Heaven and how we approach building focused software products.",
+
+  alternates: {
+    canonical: "/company",
+  },
+
+  openGraph: {
+    title: "Company | Cyber Heaven",
+    description:
+      "Learn more about Cyber Heaven and how we approach building focused software products.",
+    url: "/company",
+  },
 };
 
 export default function CompanyPage() {

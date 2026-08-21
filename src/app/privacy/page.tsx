@@ -7,7 +7,12 @@ import { LegalSection } from "@/components/legal/LegalSection";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
+
   description: "Privacy Policy for the Cyber Heaven website.",
+
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {

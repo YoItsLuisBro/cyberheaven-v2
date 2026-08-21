@@ -8,7 +8,18 @@ import { ProductCard } from "@/components/products/ProductCard";
 
 export const metadata: Metadata = {
   title: "Products",
+
   description: "Explore software products built by Cyber Heaven.",
+
+  alternates: {
+    canonical: "/products",
+  },
+
+  openGraph: {
+    title: "Products | Cyber Heaven",
+    description: "Explore software products built by Cyber Heaven.",
+    url: "/products",
+  },
 };
 
 export default function ProductsPage() {

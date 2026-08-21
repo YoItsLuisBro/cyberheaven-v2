@@ -36,7 +36,25 @@ export async function generateMetadata({
 
   return {
     title: product.name,
+
     description: product.description,
+
+    alternates: {
+      canonical: `/products/${product.slug}`,
+    },
+
+    openGraph: {
+      type: "website",
+      title: `${product.name} | Cyber Heaven`,
+      description: product.description,
+      url: `/products/${product.slug}`,
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} | Cyber Heaven`,
+      description: product.description,
+    },
   };
 }
 

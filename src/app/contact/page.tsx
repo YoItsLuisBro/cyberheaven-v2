@@ -7,8 +7,13 @@ import { ContactReasons } from "@/components/contact/ContactReasons";
 
 export const metadata: Metadata = {
   title: "Contact",
+
   description:
     "Contact Cyber Heaven for product questions, feedback, support, partnerships, and general inquiries.",
+
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {
