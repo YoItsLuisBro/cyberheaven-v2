@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { legalNavigation, mainNavigation } from "@/data/navigation";
+import { company } from "@/data/company";
 
 import { Container } from "@/components/ui/Container";
 import { Wordmark } from "@/components/layout/Wordmark";
@@ -17,6 +18,13 @@ export function SiteFooter() {
               Focused software for productivity, finance, business, and
               developers.
             </p>
+
+            <a
+              href={`mailto:${company.email}`}
+              className="mt-5 inline-flex text-sm text-muted-light transition-colors hover:text-foreground"
+            >
+              {company.email}
+            </a>
           </div>
 
           <div>
@@ -71,7 +79,7 @@ export function SiteFooter() {
 
         <div className="flex flex-col gap-4 border-t border-border py-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-muted">
-            © {new Date().getFullYear()} Cyber Heaven LLC. All rights reserved.
+            © {new Date().getFullYear()} {company.name}. All rights reserved.
           </p>
 
           <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">

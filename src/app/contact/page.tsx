@@ -1,16 +1,23 @@
-import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
+import type { Metadata } from "next";
+
+import { ContactCta } from "@/components/contact/ContactCta";
+import { ContactEmail } from "@/components/contact/ContactEmail";
+import { ContactHero } from "@/components/contact/ContactHero";
+import { ContactReasons } from "@/components/contact/ContactReasons";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Contact Cyber Heaven for product questions, feedback, support, partnerships, and general inquiries.",
+};
 
 export default function ContactPage() {
   return (
-    <Container>
-      <section className="min-h-[60vh] py-24 sm:py-32">
-        <Eyebrow>Cyber Heaven</Eyebrow>
-
-        <h1 className="mt-6 text-5xl font-medium tracking-[-0.05em] sm:text-7xl">
-          Contact
-        </h1>
-      </section>
-    </Container>
+    <>
+      <ContactHero />
+      <ContactReasons />
+      <ContactEmail />
+      <ContactCta />
+    </>
   );
 }
