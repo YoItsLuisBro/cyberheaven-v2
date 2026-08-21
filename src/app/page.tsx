@@ -2,21 +2,10 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Section } from "@/components/ui/Section";
-import { Wordmark } from "@/components/layout/Wordmark";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Container>
-        <header className="flex h-20 items-center justify-between border-b border-border">
-          <Wordmark />
-
-          <span className="font-mono text-xs uppercase tracking-[0.18em] text-muted">
-            Design System
-          </span>
-        </header>
-      </Container>
-
       <Container>
         <section className="flex min-h-[70vh] flex-col justify-center py-24">
           <Eyebrow>Independent Software Company</Eyebrow>
@@ -93,7 +82,7 @@ export default function Home() {
 
             <ColorCard
               name="Foreground"
-              className="bg-foreground text-background"
+              className="bg-inverse text-inverse-foreground"
             />
 
             <ColorCard name="Muted" className="bg-muted text-background" />
