@@ -13,8 +13,9 @@ export function CompanyStatement() {
 
           <div>
             <p className="max-w-5xl text-3xl font-medium leading-[1.15] tracking-[-0.04em] sm:text-4xl lg:text-5xl">
-              Cyber Heaven is an independent software company focused on turning
-              useful ideas into focused, thoughtfully designed products.
+              We believe software should remove friction, make information
+              clearer, and give people better tools for the things they already
+              do.
             </p>
 
             <Link

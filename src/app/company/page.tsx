@@ -1,16 +1,25 @@
-import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
+import type { Metadata } from "next";
+
+import { CompanyAbout } from "@/components/company/CompanyAbout";
+import { CompanyCta } from "@/components/company/CompanyCta";
+import { CompanyFocus } from "@/components/company/CompanyFocus";
+import { CompanyHero } from "@/components/company/CompanyHero";
+import { CompanyPrinciples } from "@/components/company/CompanyPrinciples";
+
+export const metadata: Metadata = {
+  title: "Company",
+  description:
+    "Learn more about Cyber Heaven and how we approach building focused software products.",
+};
 
 export default function CompanyPage() {
   return (
-    <Container>
-      <section className="min-h-[60vh] py-24 sm:py-32">
-        <Eyebrow>Cyber Heaven</Eyebrow>
-
-        <h1 className="mt-6 text-5xl font-medium tracking-[-0.05em] sm:text-7xl">
-          Company
-        </h1>
-      </section>
-    </Container>
+    <>
+      <CompanyHero />
+      <CompanyAbout />
+      <CompanyFocus />
+      <CompanyPrinciples />
+      <CompanyCta />
+    </>
   );
 }
