@@ -4,10 +4,6 @@ export const mainNavigation = [
     href: "/products",
   },
   {
-    label: "Labs",
-    href: "/labs",
-  },
-  {
     label: "Company",
     href: "/company",
   },

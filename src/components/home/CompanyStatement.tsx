@@ -9,7 +9,7 @@ export function CompanyStatement() {
     <Section>
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1fr_3fr]">
-          <Eyebrow>04 // Company</Eyebrow>
+          <Eyebrow>03 // Company</Eyebrow>
 
           <div>
             <p className="max-w-5xl text-3xl font-medium leading-[1.15] tracking-[-0.04em] sm:text-4xl lg:text-5xl">
